@@ -16,17 +16,41 @@ body {
         background-color: var(--bg-color-white);
         font-family: Roboto, sans-serif;         
     }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.section {
+    padding: 94px 0;
+    background-color: var(--bg-color-primary);
+}
+.container {
+    width: 100% ;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
 .link {
     text-decoration: none;
 }
 .list {
         list-style: none;
+        margin: 0;
+        padding: 0;
+
     }
  
-
+/* Header */
 .header-container {
-    width: 1200px;
-    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,8 +74,14 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    padding: 24px 0;
+    }
+.adress-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 32px 0;
 }  
+
 .site-nav {
     display: flex;
     align-items: center;
@@ -72,7 +102,7 @@ body {
 .site-nav .link:focus {
     color: var(--color-text-focus);   
             }
-/* Contact */
+    /* Contact */
 .contact {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -84,14 +114,13 @@ body {
 .contact:focus {
     color: var(--color-text-focus);
 }
+
 /* Hero */
 .hero {
     color: var(--color-text-white);
     background-color: var(--bd-color-brand);
     margin: 0px;
     padding: 200px 0px;
-    max-width: 1600px;
-
 }
 .hero-title {
     font-weight: 900;
@@ -125,19 +154,19 @@ body {
 .section-title.display-none {
 display: none;
 }
+/* Наші переваги контейнер */
 .benefits-container {
     display: flex;
-    width: 1200px;
     padding: 0 15px;    
     justify-content: space-between;
     gap: 30px
 
 }
+/* Чим ми займаємось  */
 .whatwedo-container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    width: 1200px;
     margin-bottom: 94px;
 }
 .section-title{
@@ -147,7 +176,6 @@ display: none;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    width: 1200px;
     margin-bottom: 50px;
 }
 .list-title {
@@ -157,12 +185,21 @@ display: none;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    width: 270px;
+}
+/* Наша команда */
+.section.teams {
+    padding: 0;
+}
+.container.teams {
+background-color: var(--bg-color-secondary);
+padding: 94px 15px;
 }
 .teams-container {
     display: flex;
     gap: 30px;
-    margin-bottom: 94px;
-
+    background-color: var (var(--bg-color-white));
+    border-radius: 0px 0px 4px 4px;
 }
 
 .list-title-card {
@@ -171,6 +208,7 @@ display: none;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin: 30px 0 10px;
 }
 .list-title-portfolio {
     color: var(--primary-text-color);
@@ -189,20 +227,23 @@ display: none;
 }
 .text-card {
     color: var(--secondary-text-color);
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;    
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 30px;
 }
 .text-portfolio {
+    display: inline-block;
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;   
+    letter-spacing: 0.03em; 
+    padding-bottom: 20px;  
 }
 .filter-container {
     display: flex;
-    width: 1200px;
     gap: 8px;
     justify-content: center;
     margin-bottom: 34px;
@@ -228,21 +269,33 @@ display: none;
 } 
 .portfolio-container {
     display: flex;
-    width: 1200px;
-    gap: calc((100%-60px)/3);
-    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
+     
 }
 /* Footer */
 .footer {
     background-color: var(--bd-color-brand);
-    max-width: 1600px;
-    padding: 60px 0;
-}
-.footer .logo {
-    color: var(--color-text-white);
    
 }
+.footer .container {
+    padding: 60px 15px;
+}
+.logo-footer {    
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--color-text-white);
+    padding-bottom: 20px;
+ 
+    }
+.logo-footer-span {
+    color: var(--color-text-focus);
+}
+
 .address {
     color: var(--color-text-white);
     font-style: normal;
@@ -252,12 +305,17 @@ display: none;
 }
 
 .contact-footer {
+    display: inline-block;
     color: var(--color-contact);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    padding-top: 9px;
+
 }
+.logo-footer:hover,
+.logo-footer:focus,
 .address:hover,
 .address:focus,
 .contact-footer:hover,
