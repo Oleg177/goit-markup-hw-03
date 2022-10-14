@@ -58,6 +58,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 32px 0;
    
 }
     /* Logo  header */
@@ -84,7 +85,6 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    padding: 32px 0;
 }  
 
 .site-nav {
@@ -256,7 +256,7 @@ padding: 0 0 94px;
 .logo-footer-span {
     color: var(--color-text-focus);
 }
-.footer-list {
+.footer-list:nth-child(-n+2) {
 margin-bottom: 9px;
 }
 .address {
